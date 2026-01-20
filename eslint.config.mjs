@@ -5,7 +5,7 @@ import globals from 'globals';
 
 export default [
   {
-    ignores: ['dist', 'node_modules'],
+    ignores: ['dist', 'node_modules', 'commitlint.config.js', '.lintstagedrc.js'],
   },
   js.configs.recommended,
   {
