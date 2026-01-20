@@ -1,5 +1,8 @@
 # Run lint-staged for linting and formatting
 pnpm lint-staged
 
+# Formatting
+pnpm run format
+
 # Run unit tests
 pnpm test
