@@ -1,7 +1,6 @@
 version: '3.8'
 
 services:
-  # Database Tier
   database:
     image: postgres:16-alpine
     container_name: nestjs-notes-db
@@ -21,7 +20,6 @@ services:
     networks:
       - app-network
 
-  # Application Tier
   application:
     build:
       context: .
@@ -47,7 +45,6 @@ services:
       - app-network
     restart: unless-stopped
 
-  # Web Server Tier (Nginx as reverse proxy)
   webserver:
     image: nginx:alpine
     container_name: nestjs-notes-nginx
